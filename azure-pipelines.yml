@@ -6,7 +6,10 @@
 trigger:
 - master
 
-pool: linux
+pool:
+  name: linux
+  demands:
+  - agent.SpecifiedCapability -equals 3.220.0
 
 steps:
 - task: Maven@3
