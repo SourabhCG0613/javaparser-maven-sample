@@ -9,7 +9,7 @@ trigger:
 pool:
   name: linux
   demands:
-  - agent.SpecifiedCapability -equals 3.220.0
+  - agent.SpecifiedCapability -equals 3.x
 
 steps:
 - task: Maven@3
